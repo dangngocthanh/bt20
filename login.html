@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rwed</title>
+</head>
+<body>
+<script>
+    let a=prompt("Who's there?", '')
+    if (a=='') a=null
+    switch (a){
+        case null:
+            alert('Canceled')
+            break
+        case 'Admin':
+            let b= prompt('Password?', '')
+            switch (b){
+                case 'TheMaster':
+                    alert('Welcome!')
+                    break
+                case null:
+                    alert('Canceled.')
+                    break
+                default:
+                    alert('Wrong password')
+            }
+            break
+        default:
+            alert("I don't know you")
+    }
+</script>
+
+</body>
+</html>
